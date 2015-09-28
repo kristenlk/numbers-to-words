@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="n2wApp">
+  <head>
+    <title>Numbers-to-Words Converter</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  </head>
+  <body>
+
+    <div ng-view></div>
+
+    <!-- SimpleStorage -->
+    <script src="node_modules/simplestorage.js/simpleStorage.js" type="text/javascript"></script>
+
+    <!-- AngularJS -->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+
+    <!-- App -->
+    <script src='app/scripts/app.js'></script>
+
+    <!-- Services -->
+    <script src='app/scripts/services/values.js'></script>
+
+    <!-- Factories -->
+    <script src='app/scripts/services/n2wFactory.js'></script>
+
+    <!-- Controllers -->
+    <script src='app/scripts/controllers/n2wController.js'></script>
+
+
+  </body>
+</html>

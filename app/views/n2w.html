@@ -1,0 +1,40 @@
+<div class="main center-block text-center">
+  <h3>Convert numbers into plain English!</h3>
+
+    <form name="n2wForm" novalidate>
+
+      <div class="form-group">
+        <label>Enter a number from 0 to 999, and we'll tell you how to write it on a check: </label>
+        <br>
+        <input
+          type="text"
+          name="n2w"
+          ng-model="n2wCtrl.number"
+          ng-maxlength="3"
+          ng-pattern="n2wCtrl.onlyNumbers"
+          required
+          >
+
+        <div class="help-block" ng-messages="n2wForm.n2w.$error">
+          <span ng-message="required" ng-if="n2wForm.n2w.$touched">Please enter a number.</span>
+          <span ng-message="pattern">Please only enter numbers.</span>
+          <span ng-message="maxlength">Please enter a number from 0 to 999.</span>
+
+        </div>
+
+      </div>
+
+      <button
+        class="form-group btn btn-default"
+        role="button"
+        type="submit"
+        ng-click="n2wCtrl.getConvertedNumber(n2wCtrl.number)"
+        ng-disabled="n2wForm.$invalid"
+      >
+        Convert
+      </button>
+
+    </form>
+
+    <h3>{{ n2wCtrl.convertedWord }}</h3>
+</div>

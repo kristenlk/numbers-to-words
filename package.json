@@ -1,0 +1,17 @@
+{
+  "name": "attend_homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "Kristen Kehlenbeck",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.0-beta.0",
+    "angular-messages": "^1.5.0-beta.0",
+    "angular-route": "^1.5.0-beta.0",
+    "bootstrap": "^3.3.5",
+    "http-server": "^0.8.5",
+    "jquery": "^2.1.4",
+    "simplestorage.js": "^0.1.3"
+  }
+}
